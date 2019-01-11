@@ -46,7 +46,7 @@ public class MyIntentService extends IntentService {
     protected void onHandleIntent(@Nullable Intent intent) {
 
         try {
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 100; i++) {
                 sendToClients(Message.obtain(null, MESSAGE_INFO, WorkerGenerator.generateWorker()));
                 TimeUnit.SECONDS.sleep(1);
             }

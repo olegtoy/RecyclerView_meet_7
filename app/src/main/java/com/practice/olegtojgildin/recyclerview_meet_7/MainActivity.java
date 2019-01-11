@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recycler_view);
         mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(mManager);
-        workers = WorkerGenerator.generateWorkers(3);
+        workers = WorkerGenerator.generateWorkers(0);
         mAdapter = new CustomAdapter(workers);
         mRecyclerView.setAdapter(mAdapter);
         myItemTouchHelper = new MyItemTouchHelper((MyItemTouchHelper.ItemTouchHelperAdapter) mAdapter);
