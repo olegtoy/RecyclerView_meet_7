@@ -5,7 +5,7 @@ package com.practice.olegtojgildin.recyclerview_meet_7;
  */
 
 
-public class Worker {
+public class Worker implements BaseItem{
     private int id;
     private String name;
     private Integer photo;
